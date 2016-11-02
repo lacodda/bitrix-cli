@@ -12,7 +12,7 @@
 
 ```bash
 composer install --no-dev --prefer-dist --no-interaction
-./vendor/bin/jedi env:init prod --no-interaction
+./vendor/bin/bitrix-cli env:init prod --no-interaction
 ```
 
 Консольная команда `env:init`, в отличии от [остальных команд](command.md), имеет особый алгоритм выполнения, 

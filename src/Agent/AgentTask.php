@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Agent;
+namespace Lacodda\BitrixCli\Agent;
 
 use Bitrix\Main\Type\DateTime;
 
@@ -13,7 +13,7 @@ use Bitrix\Main\Type\DateTime;
  *
  * Usage:
  * ```php
- * use Notamedia\ConsoleJedi\Agent\AgentTask;
+ * use Lacodda\BitrixCli\Agent\AgentTask;
  * use Vendor\Module\TestAgent;
  *
  * AgentTask::builder()

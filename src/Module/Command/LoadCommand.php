@@ -4,11 +4,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Module\Command;
+namespace Lacodda\BitrixCli\Module\Command;
 
-use Notamedia\ConsoleJedi\Application\CanRestartTrait;
-use Notamedia\ConsoleJedi\Module\Exception\ModuleInstallException;
-use Notamedia\ConsoleJedi\Module\Module;
+use Lacodda\BitrixCli\Application\CanRestartTrait;
+use Lacodda\BitrixCli\Module\Exception\ModuleInstallException;
+use Lacodda\BitrixCli\Module\Module;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;

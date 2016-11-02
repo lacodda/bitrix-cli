@@ -4,12 +4,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Search\Command;
+namespace Lacodda\BitrixCli\Search\Command;
 
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
-use Notamedia\ConsoleJedi\Application\Command\BitrixCommand;
-use Notamedia\ConsoleJedi\Application\Exception\BitrixException;
+use Lacodda\BitrixCli\Application\Command\BitrixCommand;
+use Lacodda\BitrixCli\Application\Exception\BitrixException;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;

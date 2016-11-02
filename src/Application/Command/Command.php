@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Application\Command;
+namespace Lacodda\BitrixCli\Application\Command;
 
 /**
  * Base class for console command.
@@ -14,7 +14,7 @@ namespace Notamedia\ConsoleJedi\Application\Command;
 class Command extends \Symfony\Component\Console\Command\Command
 {
     /**
-     * @return \Notamedia\ConsoleJedi\Application\Application
+     * @return \Lacodda\BitrixCli\Application\Application
      */
     public function getApplication()
     {

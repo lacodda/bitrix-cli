@@ -4,19 +4,19 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Environment\Command;
+namespace Lacodda\BitrixCli\Environment\Command;
 
 use Bitrix\Main\Application;
 use Bitrix\Main\Config\Configuration;
 use Bitrix\Main\Config\Option;
 use Bitrix\Main\IO\File;
 use Bitrix\Main\Loader;
-use Notamedia\ConsoleJedi\Application\Command\Command;
-use Notamedia\ConsoleJedi\Application\Exception\BitrixException;
-use Notamedia\ConsoleJedi\Module\Command\ModuleCommand;
-use Notamedia\ConsoleJedi\Module\Exception\ModuleException;
-use Notamedia\ConsoleJedi\Module\Exception\ModuleInstallException;
-use Notamedia\ConsoleJedi\Module\Module;
+use Lacodda\BitrixCli\Application\Command\Command;
+use Lacodda\BitrixCli\Application\Exception\BitrixException;
+use Lacodda\BitrixCli\Module\Command\ModuleCommand;
+use Lacodda\BitrixCli\Module\Exception\ModuleException;
+use Lacodda\BitrixCli\Module\Exception\ModuleInstallException;
+use Lacodda\BitrixCli\Module\Module;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -205,7 +205,7 @@ class InitCommand extends Command
         $app = $this->getApplication();
         if ($app->getConfiguration()) {
             $app->addCommands(ModuleCommand::getCommands());
-            if ($app->getBitrixStatus() != \Notamedia\ConsoleJedi\Application\Application::BITRIX_STATUS_COMPLETE) {
+            if ($app->getBitrixStatus() != \Lacodda\BitrixCli\Application\Application::BITRIX_STATUS_COMPLETE) {
                 throw new BitrixException('Bitrix core is not available');
             }
         } else {

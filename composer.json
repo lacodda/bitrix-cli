@@ -1,5 +1,5 @@
 {
-  "name": "notamedia/console-jedi",
+  "name": "lacodda/bitrix-cli",
   "description": "Console application for CMS Bitrix",
   "keywords": [
     "bitrix",
@@ -9,20 +9,20 @@
   "type": "library",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/notamedia/console-jedi/issues",
-    "source": "https://github.com/notamedia/console-jedi/"
+    "issues": "https://github.com/Lacodda/bitrix-cli/issues",
+    "source": "https://github.com/Lacodda/bitrix-cli/"
   },
   "require": {
     "php": ">=5.4",
-    "symfony/console": "~2.8",
-    "symfony/filesystem": "~2.8"
+    "symfony/console": "*",
+    "symfony/filesystem": "*"
   },
   "autoload": {
     "psr-4": {
-      "Notamedia\\ConsoleJedi\\": "src/"
+      "Lacodda\\BitrixCli\\": "src/"
     }
   },
   "bin": [
-    "bin/jedi"
+    "bin/bitrix-cli"
   ]
 }

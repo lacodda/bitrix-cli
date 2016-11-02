@@ -4,10 +4,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Module\Command;
+namespace Lacodda\BitrixCli\Module\Command;
 
-use Notamedia\ConsoleJedi\Application\Command\BitrixCommand;
-use Notamedia\ConsoleJedi\Module\Module;
+use Lacodda\BitrixCli\Application\Command\BitrixCommand;
+use Lacodda\BitrixCli\Module\Module;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

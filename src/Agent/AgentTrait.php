@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Agent;
+namespace Lacodda\BitrixCli\Agent;
 
 use Bitrix\Main\Type\DateTime;
 
@@ -13,7 +13,7 @@ use Bitrix\Main\Type\DateTime;
  *
  * Algorithm of agent execution:
  * 1. Bitrix launches static method `ClassName::agent()->%method%()`. Your agents should be registered through
- * `\Notamedia\ConsoleJedi\Agent\AgentTask` in the same format: `\Vendor\Package\ClassName::agent()->%method%();`.
+ * `\Lacodda\BitrixCli\Agent\AgentTask` in the same format: `\Vendor\Package\ClassName::agent()->%method%();`.
  * All arguments from this method will be duplicated to the object constructor:
  * `agent($arg1, …, $arg2)` → `__construct($arg1, …, $arg2)`.
  * 2. Create an object of agent class.
@@ -48,7 +48,7 @@ trait AgentTrait
      * Factory method for create object of agent class.
      *
      * Bitrix calls this method to run agent. Your agents should be registered through
-     * `\Notamedia\ConsoleJedi\Agent\AgentTask`. All arguments from this method should
+     * `\Lacodda\BitrixCli\Agent\AgentTask`. All arguments from this method should
      * be duplicated in the object constructor:
      *
      * `agent($arg1, …, $arg2)` → `__construct($arg1, …, $arg2)`.

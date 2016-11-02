@@ -4,11 +4,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Module;
+namespace Lacodda\BitrixCli\Module;
 
 use Bitrix\Main\Config\Option;
 use Bitrix\Main\ModuleManager;
-use Notamedia\ConsoleJedi\Application\Exception\BitrixException;
+use Lacodda\BitrixCli\Application\Exception\BitrixException;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**

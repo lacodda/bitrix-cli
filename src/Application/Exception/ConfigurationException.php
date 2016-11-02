@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Application\Exception;
+namespace Lacodda\BitrixCli\Application\Exception;
 
 /**
  * Configuration exception.

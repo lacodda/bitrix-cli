@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Application\Command;
+namespace Lacodda\BitrixCli\Application\Command;
 
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;
@@ -154,7 +154,7 @@ class InitCommand extends Command
      */
     protected function createConfiguration(InputInterface $input, OutputInterface $output)
     {
-        $path = $this->getApplication()->getRoot() . '/.jedi.php';
+        $path = $this->getApplication()->getRoot() . '/.bitrix-cli.php';
 
         $output->writeln('  - Configuration');
 
@@ -195,7 +195,7 @@ class InitCommand extends Command
 
         $webDir = $this->questionHelper->ask($input, $output, $question);
 
-        $content = file_get_contents($this->tmplDir . '/.jedi.php');
+        $content = file_get_contents($this->tmplDir . '/.bitrix-cli.php');
         $content = str_replace(
             ['%web-dir%', '%env-dir%'],
             [addslashes($webDir), addslashes($this->envDir)],

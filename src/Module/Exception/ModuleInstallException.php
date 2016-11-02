@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Module\Exception;
+namespace Lacodda\BitrixCli\Module\Exception;
 
 class ModuleInstallException extends ModuleException
 {

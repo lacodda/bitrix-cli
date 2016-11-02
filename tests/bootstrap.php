@@ -6,5 +6,5 @@
 
 require_once __DIR__ . '/../../../autoload.php';
 
-$app = new \Notamedia\ConsoleJedi\Application\Application();
+$app = new \Lacodda\BitrixCli\Application\Application();
 $app->autoloadTests();

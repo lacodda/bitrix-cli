@@ -4,18 +4,18 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Application;
+namespace Lacodda\BitrixCli\Application;
 
 use Bitrix\Main\DB\ConnectionException;
 use Bitrix\Main\Loader;
 use Bitrix\Main\ModuleManager;
-use Notamedia\ConsoleJedi\Agent\Command\OnCronCommand;
-use Notamedia\ConsoleJedi\Agent\Command\ExecuteCommand;
-use Notamedia\ConsoleJedi\Application\Exception\ConfigurationException;
-use Notamedia\ConsoleJedi\Cache\Command\ClearCommand;
-use Notamedia\ConsoleJedi\Environment\Command\InitCommand;
-use Notamedia\ConsoleJedi\Module\Command as Module;
-use Notamedia\ConsoleJedi\Search\Command\ReIndexCommand;
+use Lacodda\BitrixCli\Agent\Command\OnCronCommand;
+use Lacodda\BitrixCli\Agent\Command\ExecuteCommand;
+use Lacodda\BitrixCli\Application\Exception\ConfigurationException;
+use Lacodda\BitrixCli\Cache\Command\ClearCommand;
+use Lacodda\BitrixCli\Environment\Command\InitCommand;
+use Lacodda\BitrixCli\Module\Command as Module;
+use Lacodda\BitrixCli\Search\Command\ReIndexCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -35,7 +35,7 @@ class Application extends \Symfony\Component\Console\Application
     /**
      * Default name of configuration file.
      */
-    const CONFIG_DEFAULT_FILE = './.jedi.php';
+    const CONFIG_DEFAULT_FILE = './.bitrix-cli.php';
     /**
      * Bitrix is unavailable.
      */
@@ -132,7 +132,7 @@ class Application extends \Symfony\Component\Console\Application
     protected function getDefaultCommands()
     {
         $commands = parent::getDefaultCommands();
-        $commands[] = new \Notamedia\ConsoleJedi\Application\Command\InitCommand();
+        $commands[] = new \Lacodda\BitrixCli\Application\Command\InitCommand();
 
         return $commands;
     }

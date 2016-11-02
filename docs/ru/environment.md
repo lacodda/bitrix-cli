@@ -56,7 +56,7 @@ return [
     'licenseKey' => 'NFR-123-456-789',
     'modules' => [
         'iblock',
-        'notamedia.i18n'
+        'lacodda.i18n'
     ],
     'options' => [
         'main' => [

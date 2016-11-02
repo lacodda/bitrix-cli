@@ -4,7 +4,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Agent;
+namespace Lacodda\BitrixCli\Agent;
 
 /**
  * Abstract class agent for development simple workers.

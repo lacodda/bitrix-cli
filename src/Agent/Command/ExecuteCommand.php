@@ -4,9 +4,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Notamedia\ConsoleJedi\Agent\Command;
+namespace Lacodda\BitrixCli\Agent\Command;
 
-use Notamedia\ConsoleJedi\Application\Command\BitrixCommand;
+use Lacodda\BitrixCli\Application\Command\BitrixCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 

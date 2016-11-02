@@ -154,7 +154,7 @@ class InitCommand extends Command
      */
     protected function createConfiguration(InputInterface $input, OutputInterface $output)
     {
-        $path = $this->getApplication()->getRoot() . '/.bitrix-cli.php';
+        $path = $this->getApplication()->getRoot() . '/.bxcli.php';
 
         $output->writeln('  - Configuration');
 
@@ -195,7 +195,7 @@ class InitCommand extends Command
 
         $webDir = $this->questionHelper->ask($input, $output, $question);
 
-        $content = file_get_contents($this->tmplDir . '/.bitrix-cli.php');
+        $content = file_get_contents($this->tmplDir . '/.bxcli.php');
         $content = str_replace(
             ['%web-dir%', '%env-dir%'],
             [addslashes($webDir), addslashes($this->envDir)],

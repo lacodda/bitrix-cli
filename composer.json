@@ -1,28 +1,28 @@
 {
-  "name": "lacodda/bitrix-cli",
-  "description": "Console application for CMS Bitrix",
-  "keywords": [
-    "bitrix",
-    "console",
-    "application"
-  ],
-  "type": "library",
-  "license": "MIT",
-  "support": {
-    "issues": "https://github.com/Lacodda/bitrix-cli/issues",
-    "source": "https://github.com/Lacodda/bitrix-cli/"
-  },
-  "require": {
-    "php": ">=5.4",
-    "symfony/console": "*",
-    "symfony/filesystem": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "Lacodda\\BitrixCli\\": "src/"
-    }
-  },
-  "bin": [
-    "bin/bitrix-cli"
-  ]
+    "name"       :"lacodda/bitrix-cli",
+    "description":"Console application for CMS Bitrix",
+    "keywords"   :[
+        "bitrix",
+        "console",
+        "application"
+    ],
+    "type"       :"library",
+    "license"    :"MIT",
+    "support"    :{
+        "issues":"https://github.com/Lacodda/bitrix-cli/issues",
+        "source":"https://github.com/Lacodda/bitrix-cli/"
+    },
+    "require"    :{
+        "php"               :">=5.4",
+        "symfony/console"   :"*",
+        "symfony/filesystem":"*"
+    },
+    "autoload"   :{
+        "psr-4":{
+            "Lacodda\\BitrixCli\\":"src/"
+        }
+    },
+    "bin"        :[
+        "bin/bxcli"
+    ]
 }

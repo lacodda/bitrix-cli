@@ -7,5 +7,5 @@ composer require lacodda/bitrix-cli
 ```
 * Выполните команду инициализации Bitrix Console:
 ```bash
-./vendor/bin/bitrix-cli init
+./vendor/bin/bxcli init
 ```

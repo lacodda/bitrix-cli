@@ -35,7 +35,7 @@ class Application extends \Symfony\Component\Console\Application
     /**
      * Default name of configuration file.
      */
-    const CONFIG_DEFAULT_FILE = './.bitrix-cli.php';
+    const CONFIG_DEFAULT_FILE = './.bxcli.php';
     /**
      * Bitrix is unavailable.
      */

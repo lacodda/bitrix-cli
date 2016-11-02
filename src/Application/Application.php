@@ -22,14 +22,14 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
- * Console Jedi application.
+ * Bitrix Console application.
  *
  * @author Nik Samokhvalov <nik@samokhvalov.info>
  */
 class Application extends \Symfony\Component\Console\Application
 {
     /**
-     * Version of the Console Jedi application.
+     * Version of the Bitrix Console application.
      */
     const VERSION = '1.0.0';
     /**
@@ -64,7 +64,7 @@ class Application extends \Symfony\Component\Console\Application
     /**
      * {@inheritdoc}
      */
-    public function __construct($name = 'Console Jedi', $version = self::VERSION)
+    public function __construct($name = 'Bitrix Console', $version = self::VERSION)
     {
         parent::__construct($name, static::VERSION);
     }
@@ -357,7 +357,7 @@ class Application extends \Symfony\Component\Console\Application
     }
 
     /**
-     * Gets root directory from which are running Console Jedi.
+     * Gets root directory from which are running Bitrix Console.
      *
      * @return string
      */

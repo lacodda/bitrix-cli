@@ -75,7 +75,7 @@ class InitCommand extends Command
     protected function configure()
     {
         $this->setName('init')
-            ->setDescription('Initialize the Console Jedi')
+            ->setDescription('Initialize the Bitrix Console')
             ->addOption('force', 'f', InputOption::VALUE_NONE, 'Override an existing files');
     }
 
@@ -95,7 +95,7 @@ class InitCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('<info>Install Console Jedi application</info>');
+        $output->writeln('<info>Install Bitrix Console application</info>');
 
         $this->createEnvironmentsDir($input, $output);
         $this->createConfiguration($input, $output);

@@ -1,6 +1,6 @@
 <?php
 /**
- * Configuration file of Console Jedi application.
+ * Configuration file of Bitrix Console application.
  * 
  * @param string 'web-dir' Relative path to web directory (document root of main site).
  * @param string 'env-dir' Relative path to directory with environments settings.

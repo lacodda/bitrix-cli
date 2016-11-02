@@ -1,4 +1,4 @@
-# Console Jedi
+# Bitrix Console
 
 [![Build Status](https://travis-ci.org/lacodda/bitrix-cli.svg)](https://travis-ci.org/lacodda/bitrix-cli)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/lacodda/bitrix-cli/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/lacodda/bitrix-cli/?branch=master)

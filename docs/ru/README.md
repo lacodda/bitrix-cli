@@ -1,4 +1,4 @@
-# Документация по Console Jedi
+# Документация по Bitrix Console
 
 ## Введение
 
